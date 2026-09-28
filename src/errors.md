@@ -19,7 +19,8 @@
 Answer: java: ';' expected
 
 2 error
-public class Main {
+
+    public class Main {
 
     public static void main(String[] args) {
 
@@ -41,8 +42,8 @@ symbol:   method printline(java.lang.String)
 location: variable out of type java.io.PrintStream
 
 3 error
-public class Main {
-
+    
+    public class Main {
     public static void main(String[] args) {
 
         String name = "Madina";
@@ -57,15 +58,14 @@ public class Main {
 
     }
 
-}
+    }
 
 Answer: java: incompatible types: java.lang.String cannot be converted to int
 
 
 4 error
 
-public class Main {
-
+    public class Main {
     public static void main(String[] args) {
         String title;
         System.out.println(title.length());
