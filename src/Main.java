@@ -5,7 +5,6 @@ public class Main {
         int baseTime = pages * 2;
 
         if (pages > 500) {
-
             return baseTime + (baseTime / 10);
         }
 
