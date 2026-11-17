@@ -1,0 +1,15 @@
+package com.example.shop.repository;
+
+import com.example.shop.model.entity.ProductVariant;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface ProductVariantRepository extends JpaRepository<ProductVariant, Long> {
+    List<ProductVariant> findByProductIdAndIsActiveTrueOrderByIdAsc(Long productId);
+
+    Optional<ProductVariant> findByIdAndProductId(Long id, Long productId);
+
+    boolean existsBySku(String sku);
+}
