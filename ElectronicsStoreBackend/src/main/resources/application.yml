@@ -3,7 +3,9 @@ spring:
     name: electronics-store-backend
 
   config:
-    import: optional:file:.env[.properties]
+    import:
+      - optional:file:.env[.properties]
+      - optional:file:ElectronicsStoreBackend/.env[.properties]
 
   profiles:
     active: dev
